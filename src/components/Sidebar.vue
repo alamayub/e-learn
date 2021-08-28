@@ -19,12 +19,12 @@
 export default {
   data: () => ({
     menus: [
-      { title: 'Home', icon: 'mdi-home', to: '/' },
-      { title: 'About', icon: 'mdi-account', to: '/about' },
-      { title: 'Courses', icon: 'mdi-cog', to: '/services' },
-      { title: 'Blog', icon: 'mdi-account-multiple', to: '/our-team' },
-      { title: 'Reviews', icon: 'mdi-account-box', to: '/contact' },
-      { title: 'Instructor', icon: 'mdi-handshake', to: '/career' } 
+      { title: 'Home', icon: '', to: '/' },  
+      { title: 'Courses', icon: '', to: '/courses' },
+      // { title: 'About Us', icon: '', to: '/about' },
+      { title: 'Contact Us', icon: '', to: '/contact' },
+      { title: 'Blogs', icon: '', to: '/blogs' },
+      { title: 'Instructor', icon: '', to: '/instructors' } 
     ],
     selectedItem: 1, 
   }),

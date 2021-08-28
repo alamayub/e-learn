@@ -48,7 +48,7 @@
 .courses {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
-  grid-gap: 20px;
+  grid-gap: 12px;
 }
 .course {
   box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%);
@@ -57,7 +57,7 @@
 }
 .course__img { 
   position: relative;
-  height: 220px; 
+  height: 200px; 
 }
 .cart__icon {
   position: absolute;
@@ -65,12 +65,12 @@
   right: 8px;
 }
 @media (max-width: 1060px) {
-  .courses { grid-template-columns: repeat(auto-fit, minmax(31%, 1fr)); grid-gap: 16px; }
+  .courses { grid-template-columns: repeat(auto-fit, minmax(31%, 1fr)); }
 }
 @media (max-width: 860px) {
-  .courses { grid-template-columns: repeat(auto-fit, minmax(48%, 1fr)); grid-gap: 16px; }
+  .courses { grid-template-columns: repeat(auto-fit, minmax(48%, 1fr)); }
 }
 @media (max-width: 500px) {
-  .courses { grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); grid-gap: 12px; }
+  .courses { grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); }
 }
 </style>

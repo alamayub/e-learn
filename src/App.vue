@@ -24,6 +24,9 @@ export default {
 
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 /* Container */
 .container {
   max-width: 1250px !important;
@@ -58,6 +61,24 @@ img {
   /* color: rgb(156 39 176 / 40%) !important; */
 }
 .v-input__icon .v-icon.v-icon, .v-select-list .v-icon.v-icon { font-size: 16px !important; }
-.v-text-field--outlined.v-input--is-focused fieldset { border: 1px solid #f7f6ee !important; }
+.v-text-field--outlined.v-input--is-focused fieldset { border: 1px solid #4a4dc7  !important; }
 .v-text-field--outlined.v-input--has-state fieldset { border: 1px solid #f36c27 !important; }
+
+/* Blogs */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+  grid-gap: 12px;
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+  .blogs { grid-template-columns: repeat(auto-fit, minmax(31%, 1fr)); }
+}
+@media (max-width: 760px) {
+  .blogs { grid-template-columns: repeat(auto-fit, minmax(48%, 1fr)); }
+}
+@media (max-width: 500px) {
+  .blogs { grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); }
+}
 </style>

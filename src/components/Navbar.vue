@@ -34,11 +34,11 @@ export default {
   data: () => ({
     navs: [
       { title: 'Home', icon: '', to: '/' },  
-      { title: 'About', icon: '' },
-      { title: 'Courses', icon: '' },
-      { title: 'Blog', icon: '' },
-      { title: 'Reviews', icon: '' },
-      { title: 'Instructor', icon: '' } 
+      { title: 'Courses', icon: '', to: '/courses' },
+      // { title: 'About Us', icon: '', to: '/about' },
+      { title: 'Contact Us', icon: '', to: '/contact' },
+      { title: 'Blogs', icon: '', to: '/blogs' },
+      { title: 'Instructor', icon: '', to: '/instructors' } 
     ]  
   }),
   computed: {
