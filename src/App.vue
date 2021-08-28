@@ -1,32 +1,63 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <Navbar />
+    <Sidebar />
+    <v-main>
+      <router-view/>
+    </v-main>
+    <Footer />
+  </v-app>
 </template>
 
+<script>
+import Navbar from './components/Navbar.vue'
+import Sidebar from './components/Sidebar.vue'
+import Footer from './components/Footer.vue'
+export default {
+  name: 'App',
+  components: { Navbar, Sidebar, Footer },
+  data: () => ({
+    //
+  }),
+};
+</script>
+
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+/* Container */
+.container {
+  max-width: 1250px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding: 12px !important;
+}
+/* Button */
+.v-btn {
+  text-transform: capitalize !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
 }
 
-#nav {
-  padding: 30px;
+/* Image */
+img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+/* Inputs */
+.v-input input, .v-input textarea { 
+  font-size: 13px !important; 
+  letter-spacing: .75px !important; 
+  /* color: #9c27b0 !important;  */
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.v-input .v-label { 
+  font-size: 13px !important; 
+  letter-spacing: 1px !important; 
+  /* color: rgb(156 39 176 / 40%) !important; */
 }
+.v-input__icon .v-icon.v-icon, .v-select-list .v-icon.v-icon { font-size: 16px !important; }
+.v-text-field--outlined.v-input--is-focused fieldset { border: 1px solid #f7f6ee !important; }
+.v-text-field--outlined.v-input--has-state fieldset { border: 1px solid #f36c27 !important; }
 </style>
