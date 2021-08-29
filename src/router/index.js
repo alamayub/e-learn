@@ -5,6 +5,7 @@ import Home from '../views/Home.vue'
 Vue.use(VueRouter)
 
 const routes = [
+  { path: '/login', name: 'Login', component: () => import('../views/Login.vue') },
   { path: '/', name: 'Home', component: Home },
   { path: '/courses', name: 'Courses', component: () => import('../views/Courses.vue') },
   { path: '/contact', name: 'Contact', component: () => import('../views/Contact.vue') },

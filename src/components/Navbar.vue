@@ -22,8 +22,8 @@
     <v-app-bar-nav-icon @click.stop="setDrawer(!drawer)" class="white d-block d-sm-block d-md-none ml-3" />
     <v-divider class="primary d-none d-sm-none d-md-block" vertical />
     <div class="ml-3 d-none d-sm-none d-md-flex" style="grid-gap: 8px;">
-      <v-btn color="secondary" tile text>Sign In</v-btn>
-      <v-btn color="primary" class="elevation-0 black--text">Register</v-btn>  
+      <v-btn color="secondary" class="elevation-0" to="/login">Sign In</v-btn>
+      <v-btn color="primary" class="elevation-0 black--text" to="/login">Register</v-btn>  
     </div>
   </v-app-bar>  
 </template>
